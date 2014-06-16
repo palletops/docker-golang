@@ -4,7 +4,7 @@
 
 # Inspired by http://technosophos.com/2013/12/02/go-1-2-on-ubuntu-12-10.html
 
-FROM ubuntu:latest
+FROM ubuntu:12.04
 MAINTAINER hugo@palletops.com
 ENV GOPATH /usr/local/lib/go
 RUN apt-get -y update --no-install-recommends
