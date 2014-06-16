@@ -15,6 +15,7 @@ RUN apt-get -y remove golang-go
 RUN apt-get -y autoremove
 RUN /usr/local/lib/go/bin/godeb install
 RUN rm -rf $GOPATH
+RUN rm *.deb
 RUN apt-get -y remove bzr git ca-certificates
 RUN apt-get -y autoremove
 RUN apt-get -y autoclean
